@@ -1,0 +1,72 @@
+{
+  "schema_version": "tianji.openpi_crop_tag_reference.v1",
+  "recorded_at": "2026-10-03T13:01:00.832923+08:00",
+  "camera": 6,
+  "frame_id": "hik_camera_6_optical_frame",
+  "ros_stamp": {
+    "sec": 1791003660,
+    "nanosec": 692956647
+  },
+  "reference_tags": {
+    "ids": [
+      18,
+      19
+    ],
+    "sizes_m": {
+      "18": 0.034,
+      "19": 0.024
+    },
+    "measured_center_distance_m": 0.055094682478194976,
+    "nominal_center_distance_m": 0.055,
+    "pair_midpoint_camera_m": [
+      -0.0030337176180156265,
+      0.0070890555448747125,
+      0.10057804008439356
+    ],
+    "reprojection_error_px": {
+      "18": 0.04142764558771296,
+      "19": 0.10948927971777452
+    }
+  },
+  "openpi_crop": {
+    "rectangle_xywh_in_rectified_image": [
+      488,
+      332,
+      224,
+      224
+    ],
+    "center_in_crop_px": [
+      111.5,
+      111.5
+    ],
+    "center_in_rectified_image_px": [
+      599.5,
+      443.5
+    ],
+    "center_corresponding_raw_image_px": [
+      599.5198822021484,
+      444.53816986083984
+    ]
+  },
+  "view_center_on_tag_plane": {
+    "camera_xyz_m": [
+      -0.00020503323182184476,
+      -0.021572561673718703,
+      0.1470862622631036
+    ],
+    "camera_depth_z_m": 0.1470862622631036,
+    "distance_from_camera_m": 0.14865996771936632,
+    "offset_from_tag_pair_midpoint_camera_xyz_m": [
+      0.002828684386193782,
+      -0.028661617218593415,
+      0.046508222178710035
+    ],
+    "offset_from_tag_pair_midpoint_board_xy_normal_m": [
+      0.004168825508450052,
+      -0.054544432486042634,
+      0.00017397074971204837
+    ],
+    "board_axes": "x=paper horizontal, y=ID18 toward ID19, normal=paper normal"
+  },
+  "method": "OpenPI rectified crop center -> corresponding raw pixel -> camera ray; ray intersected with the plane averaged from live ID 18/19 poses."
+}

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "tianji-apriltag"
+version = "0.1.0"
+description = "Tag36h11 ID 18/19 detection for HIK cameras 6/7"
+requires-python = ">=3.10"
+[project.scripts]
+tianji-apriltag = "tianji_apriltag.node:main"
+tianji-apriltag-crop-view = "tianji_apriltag.crop_view:main"
+tianji-apriltag-record-crop-center = "tianji_apriltag.record_crop_center:main"
+tianji-apriltag-record-tag-position = "tianji_apriltag.record_tag_crop_position:main"
+[tool.setuptools.packages.find]
+include = ["tianji_apriltag*"]
+[tool.setuptools.package-data]
+tianji_apriltag = ["dashboard.html", "calibration.json"]

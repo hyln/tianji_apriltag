@@ -1,0 +1,42 @@
+{
+  "schema_version": "tianji.openpi_crop_tag_position.v1",
+  "recorded_at": "2026-10-03T13:06:34.601780+08:00",
+  "camera": 6,
+  "frame_id": "hik_camera_6_optical_frame",
+  "ros_stamp": {
+    "sec": 1791003994,
+    "nanosec": 495625251
+  },
+  "tag_id": 18,
+  "tag_size_m": 0.034,
+  "tag_center_raw_image_px": [
+    575.8562788107187,
+    516.0260323008586
+  ],
+  "tag_center_rectified_image_px": [
+    575.8097772982076,
+    515.9403323036557
+  ],
+  "openpi_crop_rectangle_xywh": [
+    488,
+    332,
+    224,
+    224
+  ],
+  "tag_center_in_224_crop_px": [
+    87.80977729820756,
+    183.94033230365574
+  ],
+  "tag_center_inside_crop": true,
+  "crop_geometric_center_px": [
+    111.5,
+    111.5
+  ],
+  "offset_from_crop_center_px": [
+    -23.690222701792436,
+    72.44033230365574
+  ],
+  "tag_depth_m": 0.12395450588703605,
+  "tag_reprojection_error_px": 0.08574353614226375,
+  "method": "Live tag center transformed with the same fisheye model as OpenPI DirectCropper."
+}

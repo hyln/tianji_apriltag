@@ -1,0 +1,13 @@
+version: 0.2.1-rc3
+uuid: "f44bd2b8-7b92-4be3-b034-dc208fdb6cf3"
+id: apriltag-6-7
+name: AprilTag Cameras 6 / 7
+description: 订阅海康 6、7 号相机，识别 tag36h11 的 18、19 并计算有效标定下的位姿
+workdir: $(harbor_taskcfg_dir)/..
+webview_interface:
+  - panel_name: apriltag
+    interface_port: 23846
+    localhost_only: true
+command:
+  shell: bash
+  script: exec bash run.sh --cameras 6,7 --hz 10

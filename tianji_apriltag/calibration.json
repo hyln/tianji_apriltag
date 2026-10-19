@@ -1,0 +1,24 @@
+{
+  "schema_version": "tianji.apriltag.wrist_raw_intrinsics.v1",
+  "image_width": 1200,
+  "image_height": 1000,
+  "distortion_model": "equidistant",
+  "source": {
+    "camera_info": "tianji_arm_teleop/src/hik_camera_ros2_driver/config/camera_{6,7}_info.yaml",
+    "roi_feature_files": "tianji_arm_teleop/src/hik_camera_ros2_driver/config/{260603-MV-CS016-10GC_DA8606310,MV-CS016-10GC_DB1230570}.mfs",
+    "fisheye_interpretation": "tianji_data_convert/common/wrist_undistortion.py and special/duicha/shared_camera_intrinsics_5view224.json",
+    "note": "Each original camera_matrix is a malformed 12-value 3x4 matrix. Read fx, fy, cx, cy from its projection-like rows; subtract MFS OffsetX=116 from cx. Use the first four equidistant coefficients as in the existing wrist correction. Approximate inherited calibration, not a new physical recalibration."
+  },
+  "cameras": {
+    "6": {
+      "camera_matrix": [[830.6444502557371, 0.0, 600.6674263941145], [0.0, 830.6735356679318, 565.2812048267439], [0.0, 0.0, 1.0]],
+      "distortion_coefficients": [-0.08821364711881852, 0.005537207097134088, -0.004797075590481528, 0.0020391031610510874],
+      "source_roi_offset_xy": [116, 0]
+    },
+    "7": {
+      "camera_matrix": [[841.0637916610339, 0.0, 604.8348890756256], [0.0, 840.9687477491784, 560.1057992643565], [0.0, 0.0, 1.0]],
+      "distortion_coefficients": [-0.09014357906733653, 0.010675598137439962, -0.011036925643517752, 0.00466163822895073],
+      "source_roi_offset_xy": [116, 0]
+    }
+  }
+}

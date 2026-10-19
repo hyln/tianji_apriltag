@@ -1,0 +1,10 @@
+version: 0.2.1-rc3
+uuid: "72f37250-cea8-4cf9-9146-b115e009e7f3"
+id: openpi-crop-view
+name: OpenPI Crop View
+description: 用 OpenCV 并排显示 OpenPI 实际使用的相机 6、7 去畸变 224×224 crop
+workdir: $(harbor_taskcfg_dir)/..
+remote_display_virtual: true
+command:
+  shell: bash
+  script: exec bash run_crop_view.sh --scale 3
